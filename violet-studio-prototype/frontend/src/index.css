@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(51, 65, 85, 0.87);
+  background-color: #fafafa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos personalizados para el libro vivo */
+.libro-vivo {
+  @apply prose prose-slate max-w-none;
+}
+
+.libro-vivo h1 {
+  @apply text-3xl font-bold text-slate-900 mb-6;
+}
+
+.libro-vivo h2 {
+  @apply text-2xl font-semibold text-slate-800 mt-8 mb-4;
+}
+
+.libro-vivo h3 {
+  @apply text-xl font-medium text-slate-700 mt-6 mb-3;
+}
+
+.libro-vivo p {
+  @apply text-slate-600 leading-relaxed mb-4;
+}
+
+.libro-vivo ul, .libro-vivo ol {
+  @apply text-slate-600 space-y-2;
+}
+
+.libro-vivo pre {
+  @apply bg-slate-100 p-4 rounded-lg overflow-x-auto;
+}
+
+.libro-vivo code {
+  @apply bg-slate-100 px-2 py-1 rounded text-sm;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Estados de feedback */
+.feedback-positivo {
+  @apply bg-green-50 border-green-200 text-green-800;
+}
+
+.feedback-negativo {
+  @apply bg-red-50 border-red-200 text-red-800;
+}
+
+.feedback-incompleto {
+  @apply bg-yellow-50 border-yellow-200 text-yellow-800;
+}
+
+/* Botones especializados */
+.btn-primary {
+  @apply bg-violet-600 hover:bg-violet-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+}
+
+.btn-ghost {
+  @apply bg-transparent hover:bg-slate-100 text-slate-600 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+}
