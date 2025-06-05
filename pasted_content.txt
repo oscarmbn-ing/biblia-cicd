@@ -1,0 +1,26 @@
+¿ que es una biblia?
+En Lexy, una **“biblia”** no es un texto religioso, sino un **documento maestro** o **guía de referencia** que compila, de manera estructurada y detallada, todo el conocimiento necesario para un rol, un proceso o un módulo específico. Algunas características clave de las biblias en Lexy son:
+1. **Propósito de referencia integral**
+* Contienen la descripción completa del servicio (por ejemplo, Litigios, Renegociación, Salud Mental), sus etapas, tácticas y flujos operativos.
+* Incluyen tanto el “qué” (objetivos, entregables, métricas) como el “cómo” (paso a paso, triggers, acciones automáticas, roles involucrados).
+2. **Estructura modular y jerárquica**
+* Se organizan en capítulos, secciones y sub-secciones (por ejemplo, en la **Biblia Research Core**, el punto 4.1 “Triggers y Acciones Automáticas” está subdividido en 4.1.1, 4.1.2, etc.).
+* Cada bloque (o “chunk”) contiene un propósito claro, instrucciones precisas y ejemplos prácticos para facilitar la consulta y aplicación inmediata.
+3. **Aplicación práctica y vectorización**
+* Sirven como fuente principal de conocimiento para los agentes de IA (por ejemplo, los agentes de Research o Design) y para los equipos humanos. Cuando se actualiza una biblia, se “vectoriza” para alimentar los modelos de búsqueda y recuperación de Lexy.
+* Esa vectorización permite que, al preguntar algo sobre “¿Cuál es el trigger que activa la Acción Automática X?”, la IA recupere rápidamente la sección correspondiente de la biblia.
+4. **Roles y responsabilidades en la empresa**
+* Cada biblia está dirigida a un rol concreto:
+* **Biblia Research Core**: explica cómo preparar y facilitar Kickoffs, diagnosticar fricciones y proponer módulos de mejora.
+* **Biblia de Litigios**: detalla el servicio de Litigios, sus etapas (presentación de caso, recopilación de pruebas, trámite judicial, etc.) y cómo los investigadores (Research) y Legal Designers colaboran para optimizar cada paso.
+* **Biblia de Design**: recopila las metodologías de UX/UI legales, pasos de prototipado, criterios de accesibilidad, y directrices para los Legal Designers.
+5. **Actualizaciones continuas**
+* Cuando se sube una versión nueva (por ejemplo, “Biblia Research Core v.2.2”), reemplaza por completo la anterior. Se vectoriza de nuevo y se notifica en los canales correspondientes para garantizar que todos trabajen siempre sobre la versión oficial más reciente.
+* Esto evita confusiones y asegura que el equipo (y la IA) use información actualizada al 100 % para guiar procesos y decisiones.
+6. **Ejemplo para ilustrar**
+* Imagina que alguien del equipo de Renegociación necesita saber “¿qué desencadena el envío de recordatorios automáticos cuando un cliente no ha entregado documentos?”. En lugar de buscar en mil correos o documentos dispersos, accede a la sección específica de la biblia (por ejemplo, “4.1.3 – Acciones Automáticas de Recordatorios en la etapa de Documentos”) y encuentra:
+* **Descripción del trigger** (p.ej., “Si han pasado 3 días desde solicitud de documentos y no hay uploads”).
+* **Acciones concretas** (“Enviar mail modelo X; generar task en CRM”).
+* **Roles involucrados** (“Capitán verifica antes de 24 h que no existan excepciones”).
+* **Ejemplo de plantilla de correo y fragmentos de pseudocódigo para automatizarlo**.
+En resumen, una **biblia en Lexy** es el manual definitivo para un área o proceso: un repositorio actualizado de conocimiento que combina teoría, práctica, ejemplos concretos y especificaciones técnicas, diseñado para guiar tanto a las personas como a las IAs que trabajan en cada servicio.
